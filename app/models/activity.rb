@@ -16,6 +16,9 @@
 #
 
 class Activity < ApplicationRecord
+  has_many :pins
+  has_one :level
+  
   belongs_to :venue
 
   scope :by_name, -> { order(:name) }

@@ -1,0 +1,21 @@
+<% content_for :header do %>
+<div class="admin__header">
+  <h5 class="mr-auto">
+    Niveles
+  </h5>
+</div>
+<% end %>
+
+<div class="admin__content">
+  <table class="table admin__table">
+    <thead>
+      <tr>
+        <th class="border-top-0" scope="col">Etiqueta</th>
+        <th class="border-top-0" scope="col">Actividad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @levels %>
+    </tbody>
+  </table>
+</div>

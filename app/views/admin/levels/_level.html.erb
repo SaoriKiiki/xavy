@@ -1,0 +1,12 @@
+<tr>
+  <td>
+    <%= level.label %>
+  </td>
+
+
+  <td class="text-right">
+    <%= link_to 'Ver', admin_level_path(level), class: 'btn btn-outline-dark' %>
+    <%= link_to 'Editar', edit_admin_level_path(level), class: 'btn btn-outline-dark' %>
+    <%= link_to 'Destruir', admin_level_path(level), class: 'btn btn-outline-danger', method: :delete, data: {confirm: '¿Está seguro?'} %>
+  </td>
+</tr>

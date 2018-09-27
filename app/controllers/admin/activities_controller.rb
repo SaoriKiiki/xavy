@@ -2,7 +2,7 @@ class Admin::ActivitiesController < Admin::ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
 
   def index
-    @activities = Activity.by_name
+    @activities = Activity.all
   end
 
   def new

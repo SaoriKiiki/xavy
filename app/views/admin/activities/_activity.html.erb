@@ -1,8 +1,5 @@
 <tr>
   <td>
-    <%= link_to activity.venue.name, admin_venue_path(activity.venue) %>
-  </td>
-  <td>
     <%= activity.name %>
   </td>
   <td>
@@ -11,7 +8,11 @@
   <td>
     <%= activity.schedule %>
   </td>
+  <td>
+    <%= activity.venue_id %>
+  </td>
   <td class="text-right">
+    <%= link_to 'Ver', admin_activity_path(activity), class: 'btn btn-outline-dark' %>
     <%= link_to 'Editar', edit_admin_activity_path(activity), class: 'btn btn-outline-dark' %>
     <%= link_to 'Destruir', admin_activity_path(activity), class: 'btn btn-outline-danger', method: :delete, data: {confirm: '¿Está seguro?'} %>
   </td>
